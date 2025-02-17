@@ -12,6 +12,7 @@ import screenspace as ss
 import style as s
 from style import graphics as g
 
+
 mode = "normal"
 output = ""
 gameboard = ""
@@ -763,6 +764,8 @@ def game_loop():
         #player_choice is where the player can choose to end their turn, manage properties, or view a deed
         player_choice()
 
+
+
 if __name__ == "__main__": # For debugging purposes. Can play standalone
     ss.make_fullscreen()
 
@@ -799,3 +802,28 @@ if __name__ == "__main__": # For debugging purposes. Can play standalone
             update_history(color + f"{players[index]} wins!")
             break
     add_to_output("\033[40;0H")
+
+
+
+
+
+help = """   ___         
+ _|\  \__                          === HELP (1) ===
+|\   ____\      Welcome to Terminal Monopoly!                           
+\ \  \___|_         
+ \ \_____  \    This help screen will assist you with all the commands
+  \|____|\  \   available in the TerminalMonopoly interface. 
+    ____\_\  \  
+   |\___    __\ 
+   \|___|\__\_|             Command List:                          
+        \|__|   help <num> - display help messages (num = 1 by default)
+                game - switches ALL terminals to gameboard view___
+                term <num> - switch active terminal          _|\  \__
+                  to num                                    |\   ____\ 
+                list - print a list of all property titles  \ \  \___|_
+                calc - calculator module for basic           \ \_____  \ 
+                  arithmetic                                  \|____|\  \ 
+                deed <name> - access a property by name         ____\_\  \ 
+                  (accepts partial names)                      |\___    __\ 
+                                                               \|___|\__\_|
+                                                                    \|__| """

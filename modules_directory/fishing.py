@@ -2,6 +2,12 @@ import time
 import random
 from style import graphics as g, set_cursor, set_cursor_str
 
+help = """
+            === HELP (2) ===
+
+            back - returns to terminal screens
+            fish - opens fish minigame. Press enter to catch a fish!"""
+
 class fishing_game():
     """
     Fishing Game
